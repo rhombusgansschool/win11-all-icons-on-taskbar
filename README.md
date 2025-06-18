@@ -34,5 +34,11 @@ Recommendation: don't disable the *Hidden Icon Menu* option so that you can noti
 ## Does it affect PC performance?
 When the script is in standby mode, it does **not** affect the CPU and requires only about 30 MB of RAM. When it is running (which is rare and takes less than a second), it uses **much less** than 1% of the CPU. To reduce the already tiny performance impact, a minified script is used and the process is assigned the lowest priority.
 
+## Wanna run it only once without installing/running a WMI-Event in the Background?
+Just run `run-once-min.ps1`.
+If you want to put the script in your `shell:startup` without changing ExecutionPolicy (aka the easy way):
+Put a shortcut.ink into to your `shell:startup` with `powershell.exe -ExecutionPolicy Bypass -File "C:\Path\To\Your\Script.ps1"` as destination
+
+
 ## Acknowledgment
 u/Aemony from Reddit for the idea of using a registry event trigger
